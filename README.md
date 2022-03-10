@@ -14,7 +14,7 @@
 
 
 
-
+```jsx
 
 db.cusb.find({'Spending Score (1-100)':{$gte:50}}).explain("executionStats")
 { explainVersion: '1',
@@ -159,3 +159,4 @@ db.cusb.find({'Spending Score (1-100)':{$gte:50}}).explain("executionStats")
      internalQueryMaxAddToSetBytes: 104857600,
      internalDocumentSourceSetWindowFieldsMaxMemoryBytes: 104857600 },
   ok: 1 }
+```
