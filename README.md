@@ -9,12 +9,21 @@
 ![image](./images/2.jpg?raw=true)
 
 
+Обновление данных
+![image](./images/3.jpg?raw=true)
 
 
+Поиск по данным
+![image](./images/4.jpg?raw=true)
+
+![image](./images/5.jpg?raw=true)
 
 
+Для работы с индексами раширил исходный датасет
+![image](./images/6.jpg?raw=true)
 
 
+Поиск без индексов занимает 47 милисекунд
 ```jsx
 
 db.cusb.find({'Spending Score (1-100)':{$gte:50}}).explain("executionStats")
@@ -70,9 +79,14 @@ db.cusb.find({'Spending Score (1-100)':{$gte:50}}).explain("executionStats")
      internalQueryMaxAddToSetBytes: 104857600,
      internalDocumentSourceSetWindowFieldsMaxMemoryBytes: 104857600 },
   ok: 1 }
+```
+Создаём индекс
+
+![image](./images/7.jpg?raw=true)
   
-  
-  
+Поиск теперь занял 31 милисекунду
+```jsx  
+
   db.cusb.find({'Spending Score (1-100)':{$gte:50}}).explain("executionStats")
 { explainVersion: '1',
   queryPlanner: 
