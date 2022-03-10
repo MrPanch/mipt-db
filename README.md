@@ -1,11 +1,12 @@
 # mipt-db
 
+Установка 
+
+![1.png](./images/1.jpg?raw=true)
 
 
-
-
-
-
+Добавление данных
+![image](./images/2.jpg?raw=true)
 
 
 
